@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "github.com/0maru/gprc-sample/go";
+
+package image_uploader;
+
+service ImageUploader {
+  rpc UploadImage(UploadImageRequest) returns (UploadImageResponse) {};
+}
+
+message UploadImageRequest {
+  bytes upload_file = 1;
+}
+
+message UploadImageResponse {
+  string url = 1;
+}
+

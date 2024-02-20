@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-//option go_package = "github.com/0maru/gprc-sample/go";
+option go_package = "github.com/0maru/gprc-sample/go";
 
 package helloworld;
 
